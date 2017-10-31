@@ -1,0 +1,30 @@
+<!--
+  Generated template for the TodoDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar color="dark">
+		<ion-title>TodoDetail: {{item?.id}}</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-card>
+		<ion-card-header>
+		    <ion-card-title>{{item?.id}}</ion-card-title>
+		</ion-card-header>
+		<ion-card-content>
+			<p>id: {{item?.id}}</p>
+			<p>userId: {{item?.userId}}</p>
+			<p>title: {{item?.title}}</p>
+			<p>completed: {{item?.completed}}</p>
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>

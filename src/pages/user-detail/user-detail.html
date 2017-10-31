@@ -1,0 +1,34 @@
+<!--
+  Generated template for the UserDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar color="dark">
+		<ion-title>UserDetail: {{item?.id}}</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-card>
+		<ion-card-header>
+		    <ion-card-title>{{item?.id}}</ion-card-title>
+		</ion-card-header>
+		<ion-card-content>
+			<p>id: {{item?.id}}</p>
+			<p>name: {{item?.name}}</p>
+			<p>username: {{item?.username}}</p>
+			<p>email: {{item?.email}}</p>
+			<p>address: {{item?.address | json}}</p>
+			<p>phone: {{item?.phone}}</p>
+			<p>website: {{item?.website}}</p>
+			<p>company: {{item?.company | json}}</p>
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>
